@@ -1,0 +1,99 @@
+select * {
+    margin:0;
+    padding:0;
+}
+.flex{
+    display:flex;
+}
+img{
+    width: 100px;
+}
+a{
+text-decoration: none;;
+}
+#nav-header{
+    justify-content: space-between;
+    margin-top:0;
+}
+#header-logo{
+    height:19px;
+    align-self: center;
+    padding-left: 20px;;
+}
+#navbar{
+    list-style: none;
+    margin-top: 0;   
+}
+.navbar-part{
+    align-content: center;
+    padding:25px;
+    box-sizing:border-box;
+}
+li#navbar-part{
+    align-self: center;
+    box-sizing: border-box;
+}
+#Action{
+    border-top:5px solid;
+    box-sizing:border-box;
+}
+
+/*--------------- section "Hébergements"       */
+#second-section{
+    justify-content: space-around;
+}
+
+#hosting{
+    flex-direction:column;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    width:65%;
+}
+article.card-hosting{
+    flex-wrap: wrap;
+    width:30%;
+    background-color: white;
+}
+div.card-hosting{
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+}
+
+/*--------------- section "Les plus populaires"       */
+
+#popularity{
+    flex-direction: column;
+    width:30%;
+    justify-content: space-around;
+    border-radius:20px;
+    background-color: #d9d9d9;
+
+}
+.card-popularity{
+    flex-direction:column;
+    margin:5px;
+}
+
+/*--------------- section "ACTIVITES A MARSEILLE"-----------------------*/
+
+#section-activities{
+    flex-direction:column;
+    justify-content: space-around;
+}
+div.card-activities{
+    flex-direction: row;
+    width:90%;
+   
+}
+article.card-activities{
+    justify-items: center;
+    margin:10px;
+    border-radius:20px;
+    width:25%;
+    box-shadow: 15px 15px 15px grey ;
+    
+}
+img.card-activities{
+    object-fit:cover;
+}

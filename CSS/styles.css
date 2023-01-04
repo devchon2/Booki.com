@@ -1,7 +1,21 @@
+:root{
+    --customLightBlue: #0065fc;
+    --customDarkBlue: #deebff;
+    --customGrey: #d9d9d9;
+}
+    
+    
 select * {
     margin:0;
     padding:0;
 }
+body{
+    font-family: 'raleway', sans-serif;
+    padding:0 2.5%;
+    max-width: 1400px;
+    margin:0 auto;
+}
+
 .flex{
     display:flex;
 }
@@ -25,22 +39,30 @@ text-decoration: none;;
     margin-top: 0;   
 }
 .navbar-part{
+    display:flex;
     align-content: center;
     padding:25px;
     box-sizing:border-box;
+    border:5px solid white;
+    color:black;
+    flex-wrap: wrap;
+}
+ul#navbar{
+    margin:auto 0;
 }
 li#navbar-part{
     align-self: center;
     box-sizing: border-box;
 }
-#Action{
-    border-top:5px solid;
-    box-sizing:border-box;
+a li:hover{
+    box-sizing: border-box;
+    color:#0065fc;
+    border-top: 3px solid #0065fc;
 }
 
 /*--------------- section "Hébergements"       */
 #second-section{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #hosting{
@@ -48,16 +70,54 @@ li#navbar-part{
     background-color: #d9d9d9;
     border-radius: 20px;
     width:65%;
+    padding:0 10px;
 }
-article.card-hosting{
-    flex-wrap: wrap;
-    width:30%;
-    background-color: white;
+.title-section{
+    padding-left:20px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+.card-title{
+    font-family: 'Raleway',sans-serif;
+    font-style: bold;
+    font-size: 18px;
+    line-height: 20px;
+    margin:0;
+
 }
 div.card-hosting{
     flex-wrap: wrap;
     justify-content:space-between;
-    
+}
+article.card-hosting{
+    box-sizing: border-box;
+    border:5px solid white;
+    flex-direction:column;
+    width:30%;
+    background-color: white;
+    border-radius:20px;
+    margin:10px 10px;
+}
+
+img.card-hosting{   
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+width:100%;
+height:166.14px;
+object-fit:cover
+}
+.stars{
+    margin:20px 0 0px;
+    color:#0065fc;
+    align-items: flex-end;
+}
+
+#hosting p{
+    font-weight:bold;
+    font-size:20px;
+    padding:10px;
 }
 
 /*--------------- section "Les plus populaires"       */
@@ -65,35 +125,80 @@ div.card-hosting{
 #popularity{
     flex-direction: column;
     width:30%;
-    justify-content: space-around;
+    
     border-radius:20px;
     background-color: #d9d9d9;
+    padding:0 10px;
 
 }
-.card-popularity{
+.rich{
     flex-direction:column;
-    margin:5px;
+    justify-items: flex-start;
+}
+article.card-popularity{
+    box-sizing: border-box;
+    border:5px solid white;
+    flex-direction: row;
+    background-color: white;
+    border-radius:20px;
+    width:90%;
+    margin:10px auto;
 }
 
+div.card-popularity{
+    flex-direction:column;
+    justify-content: space-around  ;
+    width:auto;
+    height:100%
+    
+}
+img.card-popularity{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width:40%;
+    height:150px;
+    object-fit: cover;
+}
+
+div.content-card{
+    flex-direction:column;
+    justify-content: space-between;
+    padding:10px
+}
+.content-card p{
+    margin:0;
+}
 /*--------------- section "ACTIVITES A MARSEILLE"-----------------------*/
 
 #section-activities{
     flex-direction:column;
     justify-content: space-around;
 }
-div.card-activities{
+div.activities{
     flex-direction: row;
-    width:90%;
+    width:100%;
    
 }
 article.card-activities{
+    flex-direction:column;
     justify-items: center;
+    justify-content: center;
     margin:10px;
     border-radius:20px;
+    height:442px;
     width:25%;
-    box-shadow: 15px 15px 15px grey ;
-    
+    box-shadow: 0px 10px 10px #d9d9d9;
+}
+div.card-activities{
+    height:90%;
 }
 img.card-activities{
-    object-fit:cover;
+    height:400px;
+    width:100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+h3.card-activities{
+    padding:0 20px;
 }

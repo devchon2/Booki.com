@@ -1,6 +1,6 @@
 :root{
-    --customLightBlue: #0065fc;
-    --customDarkBlue: #deebff;
+    --customDarkBlue: #0065fc;
+    --customLightBlue: #deebff;
     --customGrey: #d9d9d9;
 }
     
@@ -57,7 +57,8 @@ li#navbar-part{
 a li:hover{
     box-sizing: border-box;
     color:#0065fc;
-    border-top: 3px solid #0065fc;
+    border-top: 3px solid var(--customDarkBlue);
+    font-weight: bold;
 }
 
 /*--------------- section "Hébergements"       */
@@ -67,29 +68,28 @@ a li:hover{
 
 #hosting{
     flex-direction:column;
-    background-color: #d9d9d9;
+    background-color: var(--customGrey);
     border-radius: 20px;
     width:65%;
-    padding:0 10px;
 }
 .title-section{
     padding-left:20px;
     font-family: 'Raleway';
-    font-weight: bold;
+    font-weight: 700;
     font-size: 22px;
     line-height: 26px;
 }
 .card-title{
-    font-family: 'Raleway',sans-serif;
-    font-style: bold;
-    font-size: 18px;
-    line-height: 20px;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
     margin:0;
 
 }
 div.card-hosting{
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 article.card-hosting{
     box-sizing: border-box;
@@ -98,7 +98,8 @@ article.card-hosting{
     width:30%;
     background-color: white;
     border-radius:20px;
-    margin:10px 10px;
+    margin:10px auto;
+    box-shadow: 0px 10px 15px grey;
 }
 
 img.card-hosting{   
@@ -106,11 +107,11 @@ border-top-left-radius:20px;
 border-top-right-radius:20px;
 width:100%;
 height:166.14px;
-object-fit:cover
+object-fit:cover;
 }
 .stars{
     margin:20px 0 0px;
-    color:#0065fc;
+    color:var(--customDarkBlue);
     align-items: flex-end;
 }
 
@@ -125,10 +126,9 @@ object-fit:cover
 #popularity{
     flex-direction: column;
     width:30%;
-    
     border-radius:20px;
-    background-color: #d9d9d9;
-    padding:0 10px;
+    background-color: var(--customGrey);
+    
 
 }
 .rich{
@@ -142,12 +142,13 @@ article.card-popularity{
     background-color: white;
     border-radius:20px;
     width:90%;
-    margin:10px auto;
+    margin:20px auto;
+    box-shadow: 0px 10px 15px grey;
 }
 
 div.card-popularity{
     flex-direction:column;
-    justify-content: space-around  ;
+    justify-content: space-between  ;
     width:auto;
     height:100%
     
@@ -171,28 +172,33 @@ div.content-card{
 /*--------------- section "ACTIVITES A MARSEILLE"-----------------------*/
 
 #section-activities{
+    margin-top:20px;
     flex-direction:column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-div.activities{
+div#activities{
     flex-direction: row;
-    width:100%;
+    justify-content:space-between;
+    padding:0;
+    
    
 }
 article.card-activities{
     flex-direction:column;
-    justify-items: center;
-    justify-content: center;
-    margin:10px;
+    margin:0 5px;
+    overflow: hidden;
     border-radius:20px;
     height:442px;
-    width:25%;
-    box-shadow: 0px 10px 10px #d9d9d9;
+    width:22.5%;
+    box-shadow: 0px 20px 15px grey;
 }
 div.card-activities{
-    height:90%;
+    height:100%;
+    
+    
 }
 img.card-activities{
+    box-sizing:content-box ;
     height:400px;
     width:100%;
     object-fit: cover;
@@ -200,5 +206,7 @@ img.card-activities{
     border-top-right-radius: 20px;
 }
 h3.card-activities{
-    padding:0 20px;
+    padding:0px 0px 10px 10px;
+    margin:0;
+    font-size: 16px;
 }

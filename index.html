@@ -20,8 +20,8 @@
                 <img id="header-logo" src="Images/logo/Booki.png" alt="logo Booki.com">
                 <nav  class="flex">
                     <ul class="flex" id="navbar">
-                        <a href="#hosting"><li class="navbar-part" >Hébergements</li></a>
-                        <a href="#activities"><li class="navbar-part">Activités</li></a>
+                        <a class=navbar-part href="#hosting"><li class="navbar-part" >Hébergements</li></a>
+                        <a class="navbar-part" href="#activities"><li class="navbar-part">Activités</li></a>
                     </ul>  
                 </nav>
             
@@ -29,12 +29,12 @@
         </header>
         
 <!---------------------------------------------MAIN------------------------------------------------------------------------------------------------------>
-
         <main>
-            <section id="first-section">     <!--- Section Filtres et recherches -------->
-                <h1 id="page-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p >En plein centre-ville ou en pleine nature</p>
-                        
+<!--- Section Filtres et recherches -------->
+            <section id="first-section flex">     
+                <h1 class="page-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="page-title">En plein centre-ville ou en pleine nature</p>
+<!-- Barre de recherche-->
                 <form id="search-bar" class="flex">                              <!-- Fonction de recherche-->
                     <div id="search-icon" class="flex">
                         <i class="fa-solid fa-location-dot"></i>
@@ -42,8 +42,8 @@
                     <input type="search" placeholder="Marseille, France " id="search-input">
                     <button  id="search-button">Rechercher</button>
                 </form>
-                
-                <div >                                   <!-- Boutons de filtres-->
+<!-- Boutons de filtres-->
+                <div >                                   
                     <ul class="flex " id="filters">
                         <h3>Filtres</h3>
                         <li class="filter flex">
@@ -64,15 +64,20 @@
                         </li>
                     </ul>    
                 </div>
+                
+<!-- Phrase d'information-->
                 <div id="infos-filter" class=" flex">
-                    <div class="infos">
+                    <div class="infos flex">
                         <i class="fa-solid fa-info"></i>
                     </div>               
                     <p>Plus de 500 logements disponibles dans cette ville</p>
                 </div>
             </section>
 
-<!---------------------------------------------SECTION "HEBERGEMENTS"------------------------------------------>
+<!--                                                               Hebergements et populaires     -->
+               
+<!-- Encart hébergements-->
+
             <section id="second-section" class="flex">
                 
                 <div id="hosting" class="flex" >
@@ -83,9 +88,11 @@
                     <div class="flex card-hosting">
                         <article class="card-hosting">
                             <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="card-hosting">
-                            <div class="flex content-card-hosting"> 
-                                <h3 class=card-title>Auberge la Canebière</h3>
-                                <p>Nuit à partir de 25€</p>
+                            <div class="flex content-card"> 
+                                <div class="rich">
+                                    <h3 class=card-title>Auberge la Canebière</h3>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
                                 <div class="flex stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -97,9 +104,11 @@
                         </article>
                         <article class="card-hosting">
                             <img src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" class="card-hosting">
-                            <div class="flex content-card-hosting">
-                                <h3 class=card-title>Hôtel du port</h3>              
-                                <p>Nuit à partir de 52€</p>
+                            <div class="flex content-card">
+                                <div class="rich">
+                                    <h3 class=card-title>Hôtel du port</h3>              
+                                    <p>Nuit à partir de 52€</p>
+                            </div>
                                 <div class="flex stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -111,9 +120,10 @@
                         </article>
                         <article class="card-hosting">
                             <img src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" class="card-hosting">
-                            <div class="flex content-card-hosting">
-                                 <h3 class=card-title>Hotel les mouettes</h3>
-                                <p>Nuit à partir de 76€</p>
+                            <div class="flex content-card">
+                                <div class="rich">
+                                    <h3 class=card-title>Hotel les mouettes</h3>
+                                    <p>Nuit à partir de 76€</p></div>
                                 <div class="flex stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -125,9 +135,11 @@
                         </article>
                         <article class="card-hosting">
                             <img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" class="card-hosting">
-                            <div class="flex content-card-hosting">
-                                <h3 class="card-title">Hôtel de la mer</h3>
-                                <p>Nuit à partir de 46€</p>
+                            <div class="flex content-card">
+                                <div class="rich">
+                                    <h3 class="card-title">Hôtel de la mer</h3>
+                                    <p>Nuit à partir de 46€</p>
+                                </div>
                                 <div class="flex stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -139,9 +151,11 @@
                         </article>
                         <article class="card-hosting">
                             <img src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="card-hosting">
-                            <div class="flex content-card-hosting">
-                                 <h3 class=card-title>Auberge le panier</h3>
-                                <p>Nuit à partir de 23€</p>
+                            <div class="flex content-card">
+                                <div class="rich">
+                                    <h3 class=card-title>Auberge le panier</h3>
+                                    <p>Nuit à partir de 23€</p>
+                                </div> 
                                 <div class="flex stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -153,9 +167,11 @@
                         </article>
                         <article class="card-hosting">
                             <img src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="card-hosting">
-                            <div class="flex content-card-hosting">
-                                <h3 class=card-title>Hotel chez Amina</h3>
-                                <p>Nuit à partir de 96€</p>
+                            <div class="flex content-card">
+                                <div class="rich">
+                                    <h3 class=card-title>Hotel chez Amina</h3>
+                                    <p>Nuit à partir de 96€</p>
+                                </div>
                                 <div class="flex stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -178,12 +194,12 @@
                     
                     <div class="flex card-popularity">
                         <article class="flex card-popularity ">
-                        <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="card-popularity">
-                        <div class="flex content-card">
-                            <div class="rich">
-                                <h3 class=card-title>Hotel le soleil du matin</h3>
-                                <p>Nuit à partir de 128€</p>
-                            </div>  
+                            <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="card-popularity">
+                            <div class="flex content-card">
+                                <div class="rich">
+                                    <h3 class=card-title>Hotel le soleil du matin</h3>
+                                    <p>Nuit à partir de 128€</p>
+                                </div>  
                                 <div class="flex stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -192,16 +208,17 @@
                                     <i class="fa-solid fa-star"></i>
                                 </div>
                             
-                    </div>
+                            </div>
                         </article>
                         <article class="flex card-popularity ">
                         <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="card-popularity">
                         <div class="flex content-card">
-                            <div class="flex rich">
+                            <div class="rich">
                                 <h3 class=card-title>Hotel le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
                             </div>
                             <div class="flex stars">
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -212,11 +229,12 @@
                         <article class="flex card-popularity ">
                         <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="card-popularity">
                         <div class="flex content-card">
-                            <div class="flex rich">
+                            <div class="rich">
                                 <h3 class=card-title>Hotel le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
                             </div>
                             <div class="flex stars">
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -228,6 +246,7 @@
                 </aside>
             
             </section>
+
 <!-----------------------------------------------SECTION "ACTIVITES A MARSEILLE"-->
             <section id="section-activities" class="flex">
                 <div class="title-section">
@@ -240,7 +259,7 @@
                         </div>
                         <h3 class="card-activities">Vieux-Port</h3>
                     </article>
-                    
+
                     <article class=" card-activities flex">
                         <div class="card-activities">
                             <img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="la photo d'un fort en haut de rochers" class="card-activities">
@@ -254,7 +273,7 @@
                         </div>
                         <h3 class="card-activities">Parc national des Calanques</h3>
                     </article>
-                    
+
                     <article class=" card-activities flex">
                         <div class="card-activities">
                             <img src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de notre dame de la garde" class="card-activities">
@@ -262,4 +281,28 @@
                         <h3 class="card-activities">Notre-Dame-de-la-garde</h3>
                     </article>
                 </div>
-     
+            </section>
+
+<!---------------------------------------------------FOOTER       -->
+
+<footer >
+    <div id="foot-section" class="flex">
+        <ul class="foot-menu flex">
+            <h3 class="card-title">A propos</h3>
+            <a class="foot-menu" href="#"><li class="foot-menu">Fonctionnement du site</li></a>
+            <a class="foot-menu" href="#"><li class="foot-menu">Conditions générales</li></a>
+            <a class="foot-menu" href="#"><li class="foot-menu">Données et confidentialités</li></a>
+        </ul>
+        <ul class="foot-menu flex">
+            <h3 class="card-title">Nos hébergements</h3>
+            <a class="foot-menu" href="#"><li class="foot-menu">Charte de qualité</li></a>
+            <a class="foot-menu" href="#"><li class="foot-menu">Proposer votre hôtel</li></a>
+        </ul>
+        <ul class="foot-menu flex">
+            <h3 class="card-title">Assistance</h3>
+            <a class="foot-menu" href="#"><li class="foot-menu">Centre d'aide</li></a>
+            <a class="foot-menu" href="#"><li class="foot-menu">Nous contacter</li></a>
+        </ul>
+       <ul class="foot-menu">
+       </ul>
+    

@@ -80,7 +80,7 @@ li#navbar-part{
 a.navbar-part{
     padding:0;
 }
-a.navbar-part:hover{
+li.navbar-part:hover{
     box-sizing: content-box;
     color:#0065fc;
     border-top: 3px solid var(--customDarkBlue);
@@ -89,7 +89,9 @@ a.navbar-part:hover{
 
 /*                                                              MAIN    */
 /*--- Section Filtres et recherches -------*/
-
+#first-section{
+    flex-direction: column;
+}
 p.page-title {
     margin:10px 5px 5px 0;
     font-size:18px;
@@ -129,7 +131,7 @@ div#search-icon.flex{
     font-weight:bold;
     padding-left:10px;
 }
-#search-button{
+#search-button-desktop{
     border:none;
     padding:0 20px;
     color:white;
@@ -137,13 +139,29 @@ div#search-icon.flex{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-#search-button:hover{
+#search-button-desktop:hover{
     cursor:pointer
 }
-
+#search-button-mobile{
+    display: none;
+    border:none;
+    padding:0 20px;
+    background-color: var(--customDarkBlue);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.fa-magnifying-glass{
+    color:white
+}
 /*---------------------Boutons de filtres   */
+div.filter2{
+    flex-direction: row;
+    
+    align-items:center;
+}
 ul#filters{
     padding-left: 0;
+    flex-wrap: wrap;
 }    
 #filters h3{
     align-self:center;
@@ -341,34 +359,31 @@ h3.card-activities{
 
 div#foot-section{
     background-color: var(--customGrey);
-    padding:0 0 50px 0;
+    padding:10px  50px 0;
     margin:50px 0 0 0;
     flex-direction:row;
     align-items:flex-start;
     justify-content:space-around;
 }
+
 .foot-menu{
     flex-direction:column;
-    padding-left:0;
+    padding:0;
 }
-ul.foot-menu li{
-    padding:10px 0 0 0;
+div.foot-menu{
+    width:30%;
+}
+h3.foot-menu{
+    margin-bottom:0;
 }
 a.foot-menu{
     color: black;
 }
 li.foot-menu{
-    font-size: 16px;;
+    font-size: 14px;
+    font-weight: bold;;
+    padding:5px 0
 }
-
-
-
-
-
-
-
-
-
 
 
 

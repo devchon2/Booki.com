@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="CSS/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c6b75d90fa.js" crossorigin="anonymous"></script>
         <title>Booki.com! votre hébergement pour des vacances de rêve</title>
     </head>
@@ -17,7 +17,7 @@
 <!--                                        HEADER                 -->
         <header class="flex" id="nav-header">
             
-                <img id="header-logo" src="Images/logo/Booki.png" alt="logo Booki.com">
+                <img id="header-logo" src="images/logo/Booki.png" alt="logo Booki.com">
                 <nav  class="flex">
                     <ul class="flex" id="navbar">
                         <li class="navbar-part" ><a class=navbar-part href="#hosting">Hébergements</a></li>
@@ -45,7 +45,7 @@
 
                 </form>
 <!-- Boutons de filtres-->
-                <div class="flex filter2" >   
+                <div class="flex filter-bar" >   
                     <h3>Filtres</h3>                                
                     <ul class="flex " id="filters">
                         
@@ -267,46 +267,56 @@
             </section>
 
 <!--                               SECTION "ACTIVITES A MARSEILLE"-->
-            <section id="section-activities" class="flex">
-                <div class="title-section">
-                    <h2 class="title">Activités à Marseille</h2>
-                </div>
-                <div id="activities" class=" flex">
-                    <article class=" card-activities flex">
+            <section id="activities" class="flex">
+                <div id="card-activities" class=" flex">
+                    <div class="flex" id="title-section">
+                        <h2 id="title-activities">Activités à Marseille</h2>
+                    </div>
+                    <div class="flex card-activities">
+                        <article class=" card-activities flex">
                         <a href="#">
                             <div class="card-activities">
                                 <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo d'un port avec des bateaux" class="card-activities">
                             </div>
-                            <h3 class="card-activities">Vieux-Port</h3>
+                            <div class="flex content-card-activities">
+                            <h3 class="flex card-activities">Vieux-Port</h3>
+                            </div>
                         </a>        
-                    </article>
-
-                    <article class=" card-activities flex">
+                        </article>
+                    
+                        <article class=" card-activities flex">
                         <a href="#">
                             <div class="card-activities">
                                 <img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="la photo d'un fort en haut de rochers" class="card-activities">
                             </div>
-                            <h3 class="card-activities">Fort de Pomègues</h3>
+                            <div class="flex content-card-activities">
+                            <h3 class="flex card-activities">Fort de Pomègues</h3>                      
+                            </div>
                         </a>
-                    </article>
-                
-                    <article class=" card-activities flex">
+                        </article>
+                    
+                        <article class=" card-activities flex">
                         <a href="#">
                             <div class="card-activities">
                                 <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo d'une plage avec des rochers dans le brouillard" class="card-activities">
                             </div>
-                            <h3 class="card-activities">Parc national des Calanques</h3>
+                            <div class="flex content-card-activities">
+                            <h3 class="flex card-activities">Parc national des Calanques</h3>
+                            </div>
                         </a>
-                    </article>
-
-                    <article class=" card-activities flex">
-                        <a href="#">
+                        </article>
+                    
+                        <article class=" card-activities flex">
+                        <a class="card-activities flex" href="#">
                             <div class="card-activities">
                                 <img src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de notre dame de la garde" class="card-activities">
                             </div>
-                            <h3 class="card-activities">Notre-Dame-de-la-garde</h3>
+                            <div class="flex content-card-activities">
+                            <h3 class="flex card-activities">Notre-Dame-de-la-garde</h3>
+                            </div>
                         </a>
-                    </article>
+                        </article>
+                    </div>
                 </div>
             </section>
         </main>
@@ -316,7 +326,7 @@
             <div id="foot-section" class="flex">
                 
                 <div class="foot-menu flex">
-                    <h3 class="foot-menu">A propos</h3>
+                    <h3 class="foot-menu">À propos</h3>
                     <ul class="foot-menu flex">
                         <li class="foot-menu">
                             <a class="foot-menu" href="#">
@@ -330,7 +340,7 @@
                         </li>
                         <li class="foot-menu">
                             <a class="foot-menu" href="#">
-                                Données et confidentialités
+                                Données et confidentialité
                             </a>
                         </li>
                     </ul>
@@ -370,25 +380,3 @@
         </footer>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

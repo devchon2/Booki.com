@@ -90,7 +90,7 @@ npx http-server -c-1 .
 MIT (ajouter `LICENSE` si absent).
 
 ## 📫 Contact
-Rachid Chon — `cgpt1euro@rchon-dev.fr`
+Rachid Chon — `rchon@rchon-dev.fr`
 
 ---
 
@@ -170,6 +170,6 @@ Project evaluation: **Validated**.
 MIT (add `LICENSE` if missing).
 
 ## 📫 Contact
-Rachid Chon — `cgpt1euro@rchon-dev.fr`
+Rachid Chon — `rchon@rchon-dev.fr`
 
 </details>
